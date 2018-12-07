@@ -21,12 +21,13 @@
 
   &--active {
     text-align: left;
+    background-color: @bg-main-nav-active;
   }
 }
 
 .main-nav__item a {
   display: inline-block;
-  padding: 14px 0;
+  padding: 12px 0 9px 0;
   font-family: @font-circe;
   font-size: 12px;
   line-height: 18px;
@@ -36,10 +37,11 @@
 }
 
 .main-nav__item--active a {
-  padding-left: 19px;
+  padding: 9px 0 6px 19px;
   font-family: @font-playfairdisplay;
   font-size: 16px;
   line-height: 24px;
   color: @font-normal-inner-color;
   text-transform: none;
+  letter-spacing: 1px;
 }
