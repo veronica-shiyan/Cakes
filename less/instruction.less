@@ -1,0 +1,62 @@
+.instruction {
+  .container();
+  padding-top: 29px;
+  padding-bottom: 149px;
+  background: @bg-instruction url("../img/instruction-background.png") center 315px no-repeat;
+  background-size: 320px auto;
+  text-align: left;
+  color: @font-instruction-color;
+}
+
+.instruction__title {
+  .titles();
+  margin-bottom: 30px;
+  color: @font-instruction-color;
+  text-align: center;
+}
+
+.instruction__list {
+  margin: 0;
+  list-style: none;
+  counter-reset: myCounter;
+  padding-left: 49px;
+}
+
+.instruction__item {
+  position: relative;
+  margin-bottom: 17px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    position: absolute;
+    top: -12px;
+    left: -29px;
+    counter-increment: myCounter;
+    content: counter(myCounter);
+    width: 40px;
+    height: 40px;
+    font-family: @font-playfairdisplay;
+    font-size: 35px;
+    line-height: 35px;
+    color: @font-instruction-color;
+  }
+}
+
+.instruction__name {
+  margin: 0;
+  font-family: @font-circe;
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 22px;
+}
+
+.instruction__description {
+  margin: 0;
+  font-family: @font-circe;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}

@@ -1,0 +1,107 @@
+.features {
+  .container ();
+  width: 320px;
+  padding: 0;
+}
+
+.features__title {
+  .titles();
+  margin-bottom: 6px;
+}
+
+.features__slogan {
+  margin: 0;
+  margin-bottom: 15px;
+  font-family: @font-slogan;
+  font-size: 22px;
+  line-height: 25px;
+  color: @font-slogan-color;
+}
+
+.features__list {
+  margin: 0;
+  padding: 0 19px 9px;
+  font-size: 0;
+  list-style: none;
+  background-color: @bg-main-nav-active;
+}
+
+.features__item {
+  position: relative;
+  padding-top: 82px;
+  font-family: @font-circe;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: @font-normal-color;
+
+  &--fresh {
+    padding-top: 65px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 61px;
+    height: 61px;
+    top: 10px;
+    left: 112px;
+    background-repeat: no-repeat;
+  }
+
+  &--ingredients::before {
+    background-image: url("../img/icon-ingredients.svg");
+  }
+
+  &--fresh::before {
+    width: 84px;
+    height: 50px;
+    top: 8px;
+    left: 100px;
+    background-image: url("../img/features-icon-cake.png");
+  }
+}
+
+.features__name {
+  margin: 0;
+  font-family: @font-circe;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 22px;
+  color: @font-normal-color;
+}
+
+.features__description {
+  margin: 0;
+  margin-bottom: 5px;
+  font-family: @font-circe;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: @font-normal-color;
+}
+
+.features__wrapper {
+  padding: 0 19px;
+
+  &--left {
+    padding-top: 33px;
+    padding-bottom: 170px;
+    text-align: left;
+    background: url("../img/features-background.png") center 166px no-repeat;
+    background-size: 320px auto;
+  }
+}
+
+.features__text {
+  margin: 0;
+  font-family: @font-circe;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  color: @font-normal-inner-color;
+}
+
+.features__wrapper--left .features__slogan {
+  margin-bottom: 0;
+}

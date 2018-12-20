@@ -1,0 +1,53 @@
+.slider {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.slider__btn {
+  display: none;
+}
+
+.slider__control {
+  z-index: 5;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.slider__controller {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-right: 5px;
+  background-color: #dddddd;
+  border-radius: 50%;
+
+  &--active {
+    width: 8px;
+    height: 8px;
+    background-color: #f50049;
+  }
+}
+
+.slider__slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 1s;
+
+  &--showing {
+    opacity: 1;
+    z-index: 2;
+  }
+}
+
+.slider__counter {
+  z-index: 5;
+  position: absolute;
+}

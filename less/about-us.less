@@ -1,0 +1,84 @@
+.about-us {
+  .container();
+  position: relative;
+  margin-bottom: 31px;
+  text-align: left;
+}
+
+.about-us__title {
+  .titles();
+  margin-bottom: 17px;
+  text-align: center;
+}
+
+.about-us__image {
+  position: absolute;
+  top: 52px;
+  left: 22px;
+  width: 156px;
+  height: 155px;
+}
+
+.about-us__topic {
+  margin: 0;
+  margin-bottom: 3px;
+  font-family: @font-slogan;
+  font-size: 22px;
+  line-height: 26px;
+  color: @font-slogan-color;
+}
+
+.about-us__slogan {
+  margin-bottom: 5px;
+  font-family: @font-circe;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+  color: @font-normal-color;
+}
+
+.about-us__text {
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: @font-circe;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  color: @font-normal-color;
+}
+
+.about-us__cite {
+  position: relative;
+  margin: 0;
+  padding: 58px 0 60px;
+  text-align: center;
+  font-family: @font-playfairdisplay;
+  font-size: 13px;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 16px;
+  color: @font-normal-color;
+
+  &::before {
+    content: "\201d";
+    position: absolute;
+    top: 3px;
+    left: 43%;
+    font-family: @font-playfairdisplay;
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 88px;
+    color: #fffefe;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 64px;
+    height: 31px;
+    bottom: 10px;
+    left: 38%;
+    background: url("../img/about-us-signature.png") no-repeat;
+  }
+}
