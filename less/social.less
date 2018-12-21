@@ -11,7 +11,12 @@
   &--contacts {
     flex-direction: row;
     padding: 0;
-    padding-left: 4px;
+  }
+
+  &--footer {
+    flex-direction: row;
+    margin-bottom: 30px;
+    padding: 0;
   }
 }
 
@@ -27,7 +32,16 @@
     margin-right: 29px;
   }
 
+  &--footer {
+    margin: 0;
+    margin-right: 29px;
+  }
+
   &--contacts:last-child {
+    margin: 0;
+  }
+
+  &--footer:last-child {
     margin: 0;
   }
 }
@@ -85,5 +99,19 @@
     right: 16px;
     width: 32px;
     height: 32px;
+  }
+}
+
+.social__name--footer {
+  width: 23px;
+  height: 23px;
+  border-radius: 0;
+  background-color: @bg-page-footer;
+
+  &::before {
+    top: 0;
+    right: 0;
+    width: 23px;
+    height: 23px;
   }
 }
