@@ -1,23 +1,45 @@
 .page-header {
-  margin-bottom: 44px;
+  position: relative;
+  width: 320px;
+  margin: 0 auto 44px;
+
+  @media @tablet-widths {
+    width: 768px;
+    margin-bottom: 104px;
+  }
 }
 
 .page-header__wrapper {
   .container ();
   align-items: center;
-  background: url("../img/page-header-background.png") center -40px no-repeat;
+  background: url("../img/page-header-background-mobile.png") center top no-repeat;
   background-size: 320px auto;
+
+  @media @tablet-widths {
+    width: 676px;
+    align-items: flex-start;
+    padding: 0 46px;
+    background: url("../img/page-header-background-tablet.png") right 73px no-repeat;
+    background-size: 496px auto;
+  }
 }
 
 .page-header__title {
   width: 180px;
-  margin: 127px auto 19px;
+  margin: 167px auto 19px;
   font-family: @font-playfairdisplay;
   font-size: 40px;
   line-height: 36px;
   color: @font-normal-color;
   letter-spacing: 2.5px;
   word-spacing: 2px;
+
+  @media @tablet-widths {
+    margin: 162px 0 5px;
+    font-size: 60px;
+    line-height: 55px;
+    letter-spacing: 4px;
+  }
 }
 
 .page-header__slogan {
@@ -27,17 +49,32 @@
   font-size: 22px;
   line-height: 26px;
   color: @font-slogan-color;
+
+  @media @tablet-widths {
+    margin-bottom: 34px;
+    font-size: 36px;
+    line-height: 78px;
+  }
 }
 
 .page-header__features {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   margin-bottom: 40px;
   padding: 0;
   list-style: none;
   font-size: 0;
+
+  @media @tablet-widths {
+    width: 465px;
+    flex-direction: row;
+    order: 1;
+  }
 }
 
 .page-header__feature {
+  position: relative;
   padding: 0 30px 26px 43px;
   font-family: @font-circe;
   font-size: 14px;
@@ -47,5 +84,47 @@
 
   &:last-child {
     padding-bottom: 0;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 33px;
+    height: 33px;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+  }
+
+  &--ingredients:before {
+    background-image: url("../img/icon-ingredients.svg");
+  }
+
+  &--delivery:before {
+    background-image: url("../img/icon-delivery-mobile.svg");
+  }
+
+  @media @tablet-widths {
+    margin-right: 56px;
+    padding: 16px 0 0 69px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:before {
+      width: 55px;
+      height: 55px;
+    }
+
+    &--delivery:before {
+      background-image: url("../img/icon-delivery-tablet.svg");
+    }
+  }
+}
+
+.page-header__btn {
+  @media @tablet-widths {
+    margin-bottom: 146px;
   }
 }

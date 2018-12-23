@@ -36,13 +36,16 @@
         <a href="#contacts">Контакты</a>
       </li>
     </ul>
+    <span class="main-nav__contact">+7 906 899 92 96</span>
   </nav>
   <div class="page-header__wrapper">
     <h1 class="page-header__title">Торты на&nbsp;заказ</h1>
     <p class="page-header__slogan">Ручная работа</p>
     <ul class="page-header__features">
       <li class="page-header__feature page-header__feature--ingredients">Натуральные ингредиенты</li>
-      <li class="page-header__feature page-header__feature--delivery">Доставка бесплатно при заказе от 2000 рублей*</li>
+      <li class="page-header__feature page-header__feature--delivery">Доставка бесплатно при&nbsp;заказе от 2000
+        рублей*
+      </li>
     </ul>
     <button class="page-header__btn btn">Выбрать торт</button>
   </div>
@@ -50,50 +53,72 @@
 <main>
   <section class="product" id="product">
     <h2 class="product__title">Наши торты</h2>
-    <ul class="product__list">
-      <li class="product__item">
+    <div class="product__list">
+      <div class="product__item">
         <a class="product__wrapper">
           <p class="product__name">Классические</p>
           <span class="product__count">24 вида</span>
-          <img src="img/product-classic.jpg" width="280" height="120">
+          <picture>
+            <source media="(min-width:768px)" srcset="img/product-classic-tablet.jpg">
+            <img src="img/product-classic-mobile.jpg" width="280" height="120" alt="Классические торты">
+          </picture>
         </a>
-      </li>
-      <li class="product__item">
-        <a class="product__wrapper">
-          <p class="product__name">Муссовые</p>
-          <span class="product__count">12 видов</span>
-          <img src="img/product-mousse.jpg" width="280" height="120">
-        </a>
-      </li>
-      <li class="product__item">
-        <a class="product__wrapper">
-          <p class="product__name">Свадебные</p>
-          <span class="product__count">20 видов</span>
-          <img src="img/product-wedding.jpg" width="280" height="120">
-        </a>
-      </li>
-      <li class="product__item">
-        <a class="product__wrapper">
-          <p class="product__name">Мужчинам</p>
-          <span class="product__count">12 видов</span>
-          <img src="img/product-men.jpg" width="280" height="120">
-        </a>
-      </li>
-      <li class="product__item">
-        <a class="product__wrapper">
-          <p class="product__name">Женщинам</p>
-          <span class="product__count">16 видов</span>
-          <img src="img/product-women.jpg" width="280" height="120">
-        </a>
-      </li>
-      <li class="product__item">
+      </div>
+      <div class="product__group product__group--right">
+        <div class="product__item">
+          <a class="product__wrapper">
+            <p class="product__name">Муссовые</p>
+            <span class="product__count">12 видов</span>
+            <picture>
+              <source media="(min-width:768px)" srcset="img/product-mousse-tablet.jpg">
+              <img src="img/product-mousse-mobile.jpg" width="280" height="120" alt="Муссовые торты">
+            </picture>
+          </a>
+        </div>
+        <div class="product__item">
+          <a class="product__wrapper">
+            <p class="product__name">Свадебные</p>
+            <span class="product__count">20 видов</span>
+            <picture>
+              <source media="(min-width:768px)" srcset="img/product-wedding-tablet.jpg">
+              <img src="img/product-wedding-mobile.jpg" width="280" height="120" alt="Свадебные торты">
+            </picture>
+          </a>
+        </div>
+      </div>
+      <div class="product__group product__group--left">
+        <div class="product__item">
+          <a class="product__wrapper">
+            <p class="product__name">Мужчинам</p>
+            <span class="product__count">12 видов</span>
+            <picture>
+              <source media="(min-width:768px)" srcset="img/product-men-tablet.jpg">
+              <img src="img/product-men-mobile.jpg" width="280" height="120" alt="Торты для мужчин">
+            </picture>
+          </a>
+        </div>
+        <div class="product__item">
+          <a class="product__wrapper">
+            <p class="product__name">Женщинам</p>
+            <span class="product__count">16 видов</span>
+            <picture>
+              <source media="(min-width:768px)" srcset="img/product-women-tablet.jpg">
+              <img src="img/product-women-mobile.jpg" width="280" height="120" alt="Торты для женщин">
+            </picture>
+          </a>
+        </div>
+      </div>
+      <div class="product__item">
         <a class="product__wrapper">
           <p class="product__name">Детские</p>
           <span class="product__count">18 видов</span>
-          <img src="img/product-children.jpg" width="280" height="120">
+          <picture>
+            <source media="(min-width:768px)" srcset="img/product-children-tablet.jpg">
+            <img src="img/product-children-mobile.jpg" width="280" height="120" alt="Детские торты">
+          </picture>
         </a>
-      </li>
-    </ul>
+      </div>
+    </div>
   </section>
   <section class="order" id="order">
     <h2 class="order__title">Индивидуальный заказ</h2>
@@ -120,7 +145,11 @@
         <span class="order__counter order__counter--filling slider__counter"></span>
 
         <div class="order__item order__item--filling slider__slide slider__slide--showing">
-          <img class="order__image order__image--filling" src="img/filling-photo-1.jpg" width="241" height="113">
+          <picture>
+            <source media="(min-width:768px)" srcset="img/filling-photo-1-tablet.jpg">
+            <img class="order__image order__image--filling" src="img/filling-photo-1.jpg" width="241" height="113"
+                 alt="Шоколадный ганаш">
+          </picture>
           <div class="order__text">
             <p class="order__name">Шоколадный ганаш</p>
             <p class="order__description">Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из
@@ -131,7 +160,7 @@
         </div>
 
         <div class="order__item order__item--filling slider__slide">
-          <img class="order__image" src="img/filling-photo-2.jpg" width="241" height="113">
+          <img class="order__image" src="img/filling-photo-2.jpg" width="241" height="113" alt="Экзотик">
           <div class="order__text">
             <p class="order__name">Экзотик</p>
             <p class="order__description">Белый бисквит, пропитанный фруктовым сиропом, нежный йогуртовый крем с
@@ -141,7 +170,7 @@
         </div>
 
         <div class="order__item order__item--filling slider__slide">
-          <img class="order__image" src="img/filling-photo-3.jpg" width="241" height="113">
+          <img class="order__image" src="img/filling-photo-3.jpg" width="241" height="113" alt="Кофейно-ореховый">
           <div class="order__text">
             <p class="order__name">Кофейно-ореховый</p>
             <p class="order__description">Шоколадный бисквит, пропитанный ванильным сиропом, нежный крем с вареной
@@ -151,7 +180,7 @@
         </div>
 
         <div class="order__item order__item--filling slider__slide">
-          <img class="order__image" src="img/filling-photo-4.jpg" width="241" height="113">
+          <img class="order__image" src="img/filling-photo-4.jpg" width="241" height="113" alt="Тирамису">
           <div class="order__text">
             <p class="order__name">Тирамису</p>
             <p class="order__description">Белый бисквит, пропитанный кофейным сиропом, с добавлением коньяка, и легким
@@ -161,7 +190,7 @@
         </div>
 
         <div class="order__item order__item--filling slider__slide">
-          <img class="order__image" src="img/filling-photo-5.jpg" width="241" height="113">
+          <img class="order__image" src="img/filling-photo-5.jpg" width="241" height="113" alt="Черничный брауни">
           <div class="order__text">
             <p class="order__name">Черничный брауни</p>
             <p class="order__description">Йогуртный черничный мусс на основе шоколадного масляного бисквита.</p>
@@ -170,7 +199,7 @@
         </div>
 
         <div class="order__item order__item--filling slider__slide">
-          <img class="order__image" src="img/filling-photo-6.jpg" width="241" height="113">
+          <img class="order__image" src="img/filling-photo-6.jpg" width="241" height="113" alt="Эстерхази">
           <div class="order__text">
             <p class="order__name">Эстерхази</p>
             <p class="order__description">Белковые коржи с орехом, масляно-заварной крем с варёной сгущёнкой.</p>
@@ -179,7 +208,7 @@
         </div>
 
         <div class="order__item order__item--filling slider__slide">
-          <img class="order__image" src="img/filling-photo-7.jpg" width="241" height="113">
+          <img class="order__image" src="img/filling-photo-7.jpg" width="241" height="113" alt="Пражский">
           <div class="order__text">
             <p class="order__name">Пражский</p>
             <p class="order__description">Шоколадный бисквит, пропитанный кофейно-коньячным сиропом, шоколадный
@@ -189,7 +218,7 @@
         </div>
 
         <div class="order__item order__item--filling slider__slide">
-          <img class="order__image" src="img/filling-photo-8.jpg" width="241" height="113">
+          <img class="order__image" src="img/filling-photo-8.jpg" width="241" height="113" alt="Три шоколада мусс">
           <div class="order__text">
             <p class="order__name">Три шоколада мусс</p>
             <p class="order__description">Трехслойный мусс из разных видов шоколада: черного, молочного и белого.</p>
@@ -198,7 +227,7 @@
         </div>
 
         <div class="order__item order__item--filling slider__slide">
-          <img class="order__image" src="img/filling-photo-9.jpg" width="241" height="113">
+          <img class="order__image" src="img/filling-photo-9.jpg" width="241" height="113" alt="Шоколадно-абрикосовый">
           <div class="order__text">
             <p class="order__name">Шоколадно-абрикосовый</p>
             <p class="order__description">Шоколадный бисквит, пропитанный ванильным сиропом, йогуртовый крем с
@@ -208,7 +237,7 @@
         </div>
 
         <div class="order__item order__item--filling slider__slide">
-          <img class="order__image" src="img/filling-photo-10.jpg" width="241" height="113">
+          <img class="order__image" src="img/filling-photo-10.jpg" width="241" height="113" alt="Трюфельный">
           <div class="order__text">
             <p class="order__name">Трюфельный</p>
             <p class="order__description">Шоколадный бисквит, пропитанный шоколадным сиропом, насыщенный шоколадный
@@ -218,7 +247,7 @@
         </div>
 
         <div class="order__item order__item--filling slider__slide">
-          <img class="order__image" src="img/filling-photo-11.jpg" width="241" height="113">
+          <img class="order__image" src="img/filling-photo-11.jpg" width="241" height="113" alt="Сметанник">
           <div class="order__text">
             <p class="order__name">Сметанник</p>
             <p class="order__description">Шоколадный и белый бисквиты, пропитанные нежным кремом на основе
@@ -228,7 +257,7 @@
         </div>
 
         <div class="order__item order__item--filling slider__slide">
-          <img class="order__image" src="img/filling-photo-12.jpg" width="241" height="113">
+          <img class="order__image" src="img/filling-photo-12.jpg" width="241" height="113" alt="Наполеон">
           <div class="order__text">
             <p class="order__name">Наполеон</p>
             <p class="order__description">Воздушное слоенное тесто с лёгким заварным кремом. </p>
@@ -475,7 +504,8 @@
     <ol class="instruction__list">
       <li class="instruction__item">
         <p class="instruction__name">Срок заказа</p>
-        <p class="instruction__description">Размещать заказы желательно за 2&nbsp;-&nbsp;3&nbsp;дня. На выходные заказы лучше размещать
+        <p class="instruction__description">Размещать заказы желательно за 2&nbsp;-&nbsp;3&nbsp;дня. На выходные заказы
+          лучше размещать
           минимум за неделю.</p>
       </li>
       <li class="instruction__item">

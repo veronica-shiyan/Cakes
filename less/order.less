@@ -7,6 +7,10 @@
   .titles();
   margin-bottom: 7px;
   word-spacing: 4px;
+
+  @media @tablet-widths {
+    margin-bottom: 0;
+  }
 }
 
 .order__slogan {
@@ -16,9 +20,16 @@
   font-size: 22px;
   line-height: 26px;
   color: @font-slogan-color;
+
+  @media @tablet-widths {
+    margin-bottom: 23px;
+    font-size: 26px;
+    line-height: 42px;
+  }
 }
 
 .order__wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
@@ -32,6 +43,12 @@
 
   &--result {
     padding: 13px 25px 24px 15px;
+  }
+
+  @media @tablet-widths {
+    flex-direction: row;
+    padding: 40px 46px 49px;
+    margin-bottom: 21px;
   }
 }
 
@@ -67,11 +84,32 @@
   &--decoration::before {
     content: "03";
   }
+
+  @media @tablet-widths {
+    width: 128px;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 31px;
+    font-size: 18px;
+    line-height: 18px;
+
+    &::before {
+      top: -9px;
+      left: -3px;
+      font-size: 36px;
+      line-height: 36px;
+    }
+  }
 }
 
 .order__list {
   width: 241px;
   min-height: 297px;
+
+  @media @tablet-widths {
+    width: 510px;
+    min-height: 259px;
+  }
 }
 
 .order__dots {
@@ -86,6 +124,10 @@
   &--decoration {
     top: 213px;
     left: 96px;
+  }
+
+  @media @tablet-widths {
+    display: none;
   }
 }
 
@@ -103,6 +145,14 @@
     right: 47px;
     color: @font-order-color;
   }
+
+  @media @tablet-widths {
+    margin-left: auto;
+    margin-right: 26px;
+    font-size: 10px;
+    line-height: 20px;
+    color: @font-order-color;
+  }
 }
 
 .order__item {
@@ -113,11 +163,23 @@
   &--size {
     text-align: center;
   }
+
+  @media @tablet-widths {
+    flex-direction: row;
+    align-items: flex-start;
+    padding-top: 13px;
+  }
 }
 
 .order__text {
   display: flex;
   flex-direction: column;
+
+  @media @tablet-widths {
+    margin-left: 25px;
+    padding-top: 22px;
+    padding-right: 65px;
+  }
 }
 
 .order__image {
@@ -138,6 +200,12 @@
     margin-top: 8px;
     margin-bottom: 25px;
   }
+
+  @media @tablet-widths {
+    width: 210px;
+    height: 239px;
+    margin-bottom: 0;
+  }
 }
 
 .order__name {
@@ -154,6 +222,11 @@
     font-weight: 400;
     font-size: 14px;
   }
+
+  @media @tablet-widths {
+    font-size: 18px;
+    line-height: 22px;
+  }
 }
 
 .order__description {
@@ -164,6 +237,10 @@
   font-size: 14px;
   line-height: 16px;
   color: @font-order-color;
+
+  @media @tablet-widths {
+    margin-bottom: 6px;
+  }
 }
 
 .order__price {
@@ -172,10 +249,25 @@
   font-size: 18px;
   line-height: 26px;
   color: @font-normal-color;
+
+  @media @tablet-widths {
+    align-self: auto;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .order__btn {
   align-self: center;
+
+  @media @tablet-widths {
+    position: absolute;
+    bottom: 80px;
+    right: 185px;
+    padding: 10px 45px;
+    font-size: 10px;
+    line-height: 22px;
+  }
 }
 
 .order__wrapper--decoration .order__btn {
