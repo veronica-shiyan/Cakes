@@ -279,23 +279,30 @@
         </ul>
 
         <div class="order__item order__item--size slider__slide slider__slide--showing">
-          <img class="order__image order__image--size" src="img/size-photo-1.png" width="110" height="110">
-          <span class="order__description">17-18 см<br>(1 кг – 6 персон)</span>
+          <picture>
+            <source media="(min-width:768px)" srcset="img/size-photo-1-tablet.png">
+            <img class="order__image order__image--size" src="img/size-photo-1-mobile.png" width="110" height="110"
+                 alt="17-18 см (10–12 персон)">
+          </picture>
+          <span class="order__description order__description--size">17-18 см<br>(1 кг – 6 персон)</span>
         </div>
 
         <div class="order__item order__item--size slider__slide">
-          <img class="order__image order__image--size" src="img/size-photo-2.png" width="107" height="107">
-          <span class="order__description">23-24 см<br>(10–12 персон)</span>
+          <img class="order__image order__image--size" src="img/size-photo-2.png" width="107" height="107"
+               alt="23-24 см (10–12 персон)">
+          <span class="order__description order__description--size">23-24 см<br>(10–12 персон)</span>
         </div>
 
         <div class="order__item order__item--size slider__slide">
-          <img class="order__image order__image--size" src="img/size-photo-3.png" width="120" height="121">
-          <span class="order__description">Два яруса 25 и 20 см<br>(15–20 персон)</span>
+          <img class="order__image order__image--size" src="img/size-photo-3.png" width="120" height="121"
+               alt="Два яруса 25 и 20 см (15–20 персон)">
+          <span class="order__description order__description--size">Два яруса 25 и 20 см<br>(15–20 персон)</span>
         </div>
 
         <div class="order__item order__item--size slider__slide">
-          <img class="order__image order__image--size" src="img/size-photo-4.png" width="139" height="141">
-          <span class="order__description">Три яруса 30,25 и 18 см<br>(25–30 персон)</span>
+          <img class="order__image order__image--size" src="img/size-photo-4.png" width="139" height="141"
+               alt="Три яруса 30,25 и 18 см (25–30 персон)">
+          <span class="order__description order__description--size">Три яруса 30,25 и 18 см<br>(25–30 персон)</span>
         </div>
 
       </div>
@@ -310,30 +317,62 @@
           <li class="slider__controller"></li>
           <li class="slider__controller"></li>
         </ul>
+        <button class="slider__btn slider__btn--prev">Предыдущий</button>
+        <button class="slider__btn slider__btn--next">Следующий</button>
         <span class="order__counter order__counter--decoration slider__counter"></span>
 
         <div class="order__item order__item--decoration slider__slide slider__slide--showing">
-          <img class="order__image order__image--decoration" src="img/decoration-photo-1.jpg" width="177" height="204">
+          <picture>
+            <source media="(min-width:768px)" srcset="img/decoration-photo-2-tablet.jpg">
+            <img class="order__image order__image--decoration" src="img/decoration-photo-1-mobile.jpg" width="167"
+                 height="198" alt="Маршмэллоу">
+          </picture>
           <p class="order__name order__name--decoration">Маршмэллоу</p>
-          <span class="order__price">600 руб/кг</span>
+          <span class="order__price order__price--decoration">600 руб/кг</span>
         </div>
 
         <div class="order__item order__item--decoration slider__slide">
-          <img class="order__image order__image--decoration" src="img/decoration-photo-2.jpg" width="214" height="281">
+          <picture>
+            <source media="(min-width:768px)" srcset="img/decoration-photo-1-tablet.jpg">
+            <img class="order__image order__image--decoration" src="img/decoration-photo-2-mobile.jpg" width="167"
+                 height="198" alt="Ягодное ассорти">
+          </picture>
           <p class="order__name order__name--decoration">Ягодное ассорти</p>
-          <span class="order__price">400 руб/кг</span>
+          <span class="order__price order__price--decoration">700 руб/кг</span>
         </div>
 
         <div class="order__item order__item--decoration slider__slide">
-          <img class="order__image order__image--decoration" src="img/decoration-photo-3.jpg" width="177" height="204">
+          <img class="order__image order__image--decoration" src="img/decoration-photo-3.jpg" width="177" height="204"
+               alt="Зеркальная глазурь">
           <p class="order__name order__name--decoration">Зеркальная глазурь</p>
-          <span class="order__price">500 руб/кг</span>
+          <span class="order__price order__price--decoration">500 руб/кг</span>
         </div>
 
         <div class="order__item order__item--decoration slider__slide">
-          <img class="order__image order__image--decoration" src="img/decoration-photo-4.jpg" width="177" height="204">
+          <img class="order__image order__image--decoration" src="img/decoration-photo-4.jpg" width="177" height="204"
+               alt="Шоколадная стружка">
           <p class="order__name order__name--decoration">Шоколадная стружка</p>
-          <span class="order__price">500 руб/кг</span>
+          <span class="order__price order__price--decoration">500 руб/кг</span>
+        </div>
+
+        <div class="order__item order__item--decoration slider__slide">
+          <picture>
+            <source media="(min-width:768px)" srcset="img/decoration-photo-2-tablet.jpg">
+            <img class="order__image order__image--decoration" src="img/decoration-photo-1-mobile.jpg" width="167"
+                 height="198" alt="Маршмэллоу">
+          </picture>
+          <p class="order__name order__name--decoration">Маршмэллоу</p>
+          <span class="order__price order__price--decoration">600 руб/кг</span>
+        </div>
+
+        <div class="order__item order__item--decoration slider__slide">
+          <picture>
+            <source media="(min-width:768px)" srcset="img/decoration-photo-1-tablet.jpg">
+            <img class="order__image order__image--decoration" src="img/decoration-photo-2-mobile.jpg" width="167"
+                 height="198" alt="Ягодное ассорти">
+          </picture>
+          <p class="order__name order__name--decoration">Ягодное ассорти</p>
+          <span class="order__price order__price--decoration">700 руб/кг</span>
         </div>
 
       </div>
@@ -342,42 +381,44 @@
     <div class="order__wrapper order__wrapper--result">
       <form class="order__form" action="#" method="get">
         <h2 class="form__title">Ваш выбор</h2>
-        <fieldset class="form__type-wrapper">
-          <legend class="form__type-name">Начинка</legend>
-          <select class="form__select">
-            <option selected>Шоколадный ганаш</option>
-            <option>Экзотик</option>
-            <option>Кофейно-ореховый</option>
-            <option>Тирамису</option>
-            <option>Черничный брауни</option>
-            <option>Эстерхази</option>
-            <option>Пражский</option>
-            <option>Три шоколада мусс</option>
-            <option>Шоколадно-абрикосовый</option>
-            <option>Трюфельный</option>
-            <option>Сметанник</option>
-            <option>Наполеон</option>
-          </select>
-        </fieldset>
-        <fieldset class="form__type-wrapper">
-          <legend class="form__type-name">Размер</legend>
-          <select class="form__select">
-            <option selected>1 кг</option>
-            <option>2 кг</option>
-            <option>5 кг</option>
-            <option>8 кг</option>
-          </select>
-        </fieldset>
-        <fieldset class="form__type-wrapper">
-          <legend class="form__type-name">Оформление</legend>
-          <select class="form__select">
-            <option selected>Маршмэллоу</option>
-            <option>Ягодное ассорти</option>
-            <option>Зеркальная глазурь</option>
-            <option>Шоколадная стружка</option>
-          </select>
-        </fieldset>
-        <input type="submit" value="Заказать торт" class="form__btn btn">
+        <div class="form__decorate-wrapper">
+          <fieldset class="form__type-wrapper">
+            <legend class="form__type-name">Начинка</legend>
+            <select class="form__select">
+              <option selected>Шоколадный ганаш</option>
+              <option>Экзотик</option>
+              <option>Кофейно-ореховый</option>
+              <option>Тирамису</option>
+              <option>Черничный брауни</option>
+              <option>Эстерхази</option>
+              <option>Пражский</option>
+              <option>Три шоколада мусс</option>
+              <option>Шоколадно-абрикосовый</option>
+              <option>Трюфельный</option>
+              <option>Сметанник</option>
+              <option>Наполеон</option>
+            </select>
+          </fieldset>
+          <fieldset class="form__type-wrapper">
+            <legend class="form__type-name">Размер</legend>
+            <select class="form__select">
+              <option selected>1 кг</option>
+              <option>2 кг</option>
+              <option>5 кг</option>
+              <option>8 кг</option>
+            </select>
+          </fieldset>
+          <fieldset class="form__type-wrapper">
+            <legend class="form__type-name">Оформление</legend>
+            <select class="form__select">
+              <option selected>Маршмэллоу</option>
+              <option>Ягодное ассорти</option>
+              <option>Зеркальная глазурь</option>
+              <option>Шоколадная стружка</option>
+            </select>
+          </fieldset>
+          <input type="submit" value="Заказать торт" class="form__btn btn">
+        </div>
       </form>
     </div>
   </section>
@@ -390,12 +431,18 @@
         <li class="slider__controller"></li>
         <li class="slider__controller"></li>
       </ul>
+      <button class="slider__btn slider__btn--prev">Предыдущий</button>
+      <button class="slider__btn slider__btn--next">Следующий</button>
       <span class="reviews__counter slider__counter"></span>
 
       <blockquote class="reviews__item slider__slide slider__slide--showing">
-        <img class="reviews__image" src="img/reviews-photo-1.png" width="59" height="59">
-        <cite class="reviews__author"><b>Мария</b>юрист, 33 года</cite>
+        <picture>
+          <source media="(min-width:768px)" srcset="img/reviews-photo-1-tablet.png">
+          <img class="reviews__image" src="img/reviews-photo-1-mobile.png" width="59" height="59"
+               alt="Мария, юрист, 33 года">
+        </picture>
         <div class="reviews__text">
+          <cite class="reviews__author"><b>Мария</b>юрист, 33 года</cite>
           <p>Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное спасибо за
             своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:)
             <details class="reviews__details">
@@ -407,9 +454,13 @@
       </blockquote>
 
       <blockquote class="reviews__item slider__slide">
-        <img class="reviews__image" src="img/reviews-photo-1.png" width="59" height="59">
-        <cite class="reviews__author"><b>Мария</b>юрист, 33 года</cite>
+        <picture>
+          <source media="(min-width:768px)" srcset="img/reviews-photo-1-tablet.png">
+          <img class="reviews__image" src="img/reviews-photo-1-mobile.png" width="59" height="59"
+               alt="Мария, юрист, 33 года">
+        </picture>
         <div class="reviews__text">
+          <cite class="reviews__author"><b>Мария</b>юрист, 33 года</cite>
           <p>Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное спасибо за
             своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:)
             <details class="reviews__details">
@@ -421,9 +472,13 @@
       </blockquote>
 
       <blockquote class="reviews__item slider__slide">
-        <img class="reviews__image" src="img/reviews-photo-1.png" width="59" height="59">
-        <cite class="reviews__author"><b>Мария</b>юрист, 33 года</cite>
+        <picture>
+          <source media="(min-width:768px)" srcset="img/reviews-photo-1-tablet.png">
+          <img class="reviews__image" src="img/reviews-photo-1-mobile.png" width="59" height="59"
+               alt="Мария, юрист, 33 года">
+        </picture>
         <div class="reviews__text">
+          <cite class="reviews__author"><b>Мария</b>юрист, 33 года</cite>
           <p>Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное спасибо за
             своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:)
             <details class="reviews__details">
@@ -435,9 +490,13 @@
       </blockquote>
 
       <blockquote class="reviews__item slider__slide">
-        <img class="reviews__image" src="img/reviews-photo-1.png" width="59" height="59">
-        <cite class="reviews__author"><b>Мария</b>юрист, 33 года</cite>
+        <picture>
+          <source media="(min-width:768px)" srcset="img/reviews-photo-1-tablet.png">
+          <img class="reviews__image" src="img/reviews-photo-1-mobile.png" width="59" height="59"
+               alt="Мария, юрист, 33 года">
+        </picture>
         <div class="reviews__text">
+          <cite class="reviews__author"><b>Мария</b>юрист, 33 года</cite>
           <p>Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное спасибо за
             своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:)
             <details class="reviews__details">
@@ -451,27 +510,33 @@
   </section>
   <section class="about-us" id="about-us">
     <h2 class="about-us__title">О нас</h2>
-    <img class="about-us__image" src="img/about-us-photo.png" width="156" height="155">
+    <picture>
+      <source media="(min-width:768px)" srcset="img/about-us-photo-tablet.png">
+      <img class="about-us__image" src="img/about-us-photo-mobile.png" width="156" height="155" alt="Кондитер Павел">
+    </picture>
     <ul class="social social--about-us">
-      <li class="social__item">
+      <li class="social__item social__item--about-us">
         <a class="social__name social__name--instagram" href="#">Мы в Инстаграмме</a>
       </li>
-      <li class="social__item">
+      <li class="social__item social__item--about-us">
         <a class="social__name social__name--vkontakte" href="#">Мы в Фейсбуке</a>
       </li>
-      <li class="social__item">
+      <li class="social__item social__item--about-us">
         <a class="social__name social__name--twitter" href="#">Мы в Твиттере</a>
       </li>
     </ul>
-    <h3 class="about-us__topic">О кондитере</h3>
-    <b class="about-us__slogan">Кондитер – как призвание</b>
-    <p class="about-us__text">Павел — профессиональный повар в
-      различных гастрономических областях, но однажды его сердце покорило кондитерское искусство.<br>С ранних лет он
-      увлекался утонченным мастерством и обратился к своим талантам
-      как кондитер.</p>
-    <b class="about-us__slogan">Принцип – натуральные ингредиенты</b>
-    <p class="about-us__text">Сегодня Павел радует изделиями не только близких, но и тех, кто предпочитает качественную
-      продукцию для торжества, а&nbsp;главным принципом является выбор натуральных ингредиентов.</p>
+    <div class="about-us__wrapper">
+      <h3 class="about-us__topic">О кондитере</h3>
+      <b class="about-us__slogan">Кондитер – как призвание</b>
+      <p class="about-us__text">Павел — профессиональный повар в
+        различных гастрономических областях, но однажды его сердце покорило кондитерское искусство.<br>С ранних лет он
+        увлекался утонченным мастерством и обратился к своим талантам
+        как кондитер.</p>
+      <b class="about-us__slogan">Принцип – натуральные ингредиенты</b>
+      <p class="about-us__text">Сегодня Павел радует изделиями не только близких, но и тех, кто предпочитает
+        качественную
+        продукцию для торжества, а&nbsp;главным принципом является выбор натуральных ингредиентов.</p>
+    </div>
     <p class="about-us__cite">Я за простые рецепты. В Италии это называют cucina povera: когда обычные ингредиенты
       превращаются в божественное
       блюдо.</p>

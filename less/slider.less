@@ -11,6 +11,49 @@
 
 .slider__btn {
   display: none;
+
+  @media @tablet-widths {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    top: 108px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 0;
+    background-color: @bg-main-nav-active;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+
+    &--prev {
+      left: -84px;
+      background-image: url("../img/icon-btn-prev.svg");
+    }
+
+    &--next {
+      right: 5px;
+      background-image: url("../img/icon-btn-next.svg");
+    }
+
+    &:hover {
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.8);
+    }
+  }
+}
+
+.order__wrapper--decoration .slider__btn {
+  @media @tablet-widths {
+    &--prev {
+      left: -11px;
+    }
+
+    &--next {
+      right: -21px;
+    }
+  }
 }
 
 .slider__control {
@@ -49,6 +92,21 @@
   &--showing {
     opacity: 1;
     z-index: 2;
+  }
+}
+
+.order__wrapper--decoration .slider__slide {
+  @media @tablet-widths {
+    width: 196px;
+    top: 0;
+
+    &:nth-child(odd) {
+      left: 55px;
+    }
+
+    &:nth-child(even) {
+      left: 276px;
+    }
   }
 }
 

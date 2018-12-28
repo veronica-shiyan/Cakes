@@ -3,20 +3,52 @@
   position: relative;
   margin-bottom: 31px;
   text-align: left;
+
+  @media @tablet-widths {
+    width: 676px;
+    margin-bottom: 61px;
+    padding: 3px 46px 0;
+    text-align: right;
+  }
 }
 
 .about-us__title {
   .titles();
   margin-bottom: 17px;
   text-align: center;
+
+  @media @tablet-widths {
+    margin-bottom: 3px;
+    text-align: left;
+  }
 }
 
-.about-us__image {
+.about-us picture {
   position: absolute;
   top: 52px;
   left: 22px;
+
+  @media @tablet-widths {
+    top: 0;
+    right: 46px;
+  }
+}
+
+.about-us__image {
   width: 156px;
   height: 155px;
+
+  @media @tablet-widths {
+    width: 313px;
+    height: 311px;
+  }
+}
+
+.about-us__wrapper {
+  @media @tablet-widths {
+    padding-right: 345px;
+    text-align: left;
+  }
 }
 
 .about-us__topic {
@@ -26,6 +58,12 @@
   font-size: 22px;
   line-height: 26px;
   color: @font-slogan-color;
+
+  @media @tablet-widths {
+    margin-bottom: 9px;
+    font-size: 26px;
+    line-height: 28px;
+  }
 }
 
 .about-us__slogan {
@@ -36,6 +74,14 @@
   line-height: 22px;
   letter-spacing: 0.5px;
   color: @font-normal-color;
+
+  @media @tablet-widths {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: 0.1px;
+  }
 }
 
 .about-us__text {
@@ -79,6 +125,28 @@
     height: 31px;
     bottom: 10px;
     left: 38%;
-    background: url("../img/about-us-signature.png") no-repeat;
+    background: url("../img/about-us-signature-mobile.png") no-repeat;
+  }
+
+  @media @tablet-widths {
+    order: 2;
+    padding: 47px 170px 68px 167px;
+    font-size: 14px;
+    line-height: 20px;
+
+    &::before {
+      top: -4px;
+      left: 46%;
+      font-size: 77px;
+      line-height: 77px;
+    }
+
+    &::after {
+      width: 82px;
+      height: 40px;
+      bottom: 0;
+      left: 44%;
+      background: url("../img/about-us-signature-tablet.png") no-repeat;
+    }
   }
 }

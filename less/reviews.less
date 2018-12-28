@@ -1,19 +1,36 @@
 .reviews {
   .container();
+
+  @media @tablet-widths {
+    padding-top: 35px;
+    background: url("../img/reviews-background-left.png") no-repeat left -9px, url("../img/reviews-background-right.png") no-repeat right -9px;
+  }
 }
 
 .reviews__title {
   .titles();
   margin-bottom: 17px;
+
+  @media @tablet-widths {
+    margin-bottom: 22px;
+  }
 }
 
 .reviews__list {
   min-height: 236px;
+
+  @media @tablet-widths {
+    min-height: 277px;
+  }
 }
 
 .reviews__dots {
   top: 181px;
   left: 117px;
+
+  @media @tablet-widths {
+    display: none;
+  }
 }
 
 .reviews__counter {
@@ -24,6 +41,12 @@
   font-weight: 400;
   line-height: 18px;
   color: @mark-color;
+
+  @media @tablet-widths {
+    position: absolute;
+    top: 149px;
+    right: 165px;
+  }
 }
 
 .reviews__item {
@@ -31,6 +54,13 @@
   margin: 0;
   padding: 0 25px;
   text-align: center;
+
+  @media @tablet-widths {
+    display: flex;
+    flex-direction: row;
+    padding: 0 183px 0 162px;
+    text-align: left;
+  }
 }
 
 .reviews__image {
@@ -38,6 +68,12 @@
   height: 59px;
   display: block;
   margin: 0 auto 3px;
+
+  @media @tablet-widths {
+    width: 109px;
+    height: 108px;
+    margin: 27px 23px 0 0;
+  }
 }
 
 .reviews__author {
@@ -48,6 +84,11 @@
   font-weight: 400;
   line-height: 16px;
   color: @font-normal-color;
+
+  @media @tablet-widths {
+    margin-bottom: 11px;
+    font-size: 14px;
+  }
 }
 
 .reviews__author b {
@@ -58,10 +99,18 @@
   font-style: normal;
   line-height: 18px;
   color: @font-normal-color;
+
+  @media @tablet-widths {
+    font-size: 16px;
+  }
 }
 
 .reviews__text {
   line-height: 15px;
+
+  @media @tablet-widths {
+    line-height: 17px;
+  }
 }
 
 .reviews__text p {
@@ -71,6 +120,10 @@
   font-size: 12px;
   font-weight: 400;
   color: @font-normal-color;
+
+  @media @tablet-widths {
+    font-size: 14px;
+  }
 }
 
 .reviews__details {
@@ -80,8 +133,29 @@
   font-weight: 400;
   line-height: 18px;
   color: @mark-color;
+
+  @media @tablet-widths {
+    font-size: 14px;
+  }
 }
 
 .reviews__details span {
   text-decoration: underline;
+}
+
+.reviews__list .slider__btn {
+  display: none;
+
+  @media @tablet-widths {
+    display: block;
+    top: 51px;
+
+    &--prev {
+      left: 70px;
+    }
+
+    &--next {
+      right: 70px;
+    }
+  }
 }

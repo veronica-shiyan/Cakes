@@ -1,3 +1,15 @@
+.form__decorate-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media @tablet-widths {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding-left: 5px;
+  }
+}
+
 .form__title {
   margin: 0;
   margin-bottom: 10px;
@@ -6,6 +18,12 @@
   font-size: 22px;
   line-height: 28px;
   color: @font-normal-color;
+
+  @media @tablet-widths {
+    margin-bottom: 2px;
+    font-size: 18px;
+    line-height: 40px;
+  }
 }
 
 .form__type-wrapper {
@@ -14,6 +32,12 @@
   padding: 0;
   border: none;
   text-align: center;
+
+  @media @tablet-widths {
+    margin-bottom: 0;
+    margin-right: 19px;
+    text-align: left;
+  }
 }
 
 .form__type-name {
@@ -23,6 +47,12 @@
   font-size: 20px;
   line-height: 20px;
   color: @mark-color;
+
+  @media @tablet-widths {
+    margin-bottom: 9px;
+    font-size: 18px;
+    line-height: 18px;
+  }
 }
 
 .form__select {
@@ -34,8 +64,23 @@
   font-weight: 400;
   line-height: 30px;
   color: @font-normal-color;
+
+  @media @tablet-widths {
+    width: auto;
+    padding: 5px 0 4px 23px;
+    font-size: 12px;
+    line-height: 18px;
+  }
 }
 
 .form__btn {
   margin: 17px 0 9px;
+
+  @media @tablet-widths {
+    margin: 0;
+    margin-left: auto;
+    padding: 10px 41px;
+    font-size: 10px;
+    line-height: 22px;
+  }
 }
