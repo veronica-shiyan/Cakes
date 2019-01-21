@@ -3,7 +3,12 @@
 
   @media @tablet-widths {
     padding-top: 35px;
-    background: url("../img/reviews-background-left.png") no-repeat left -9px, url("../img/reviews-background-right.png") no-repeat right -9px;
+    background: url("../img/reviews-background-left-tablet.png") no-repeat left -9px, url("../img/reviews-background-right-tablet.png") no-repeat right -9px;
+  }
+
+  @media @desktop-widths {
+    padding-top: 95px;
+    background: url("../img/reviews-background-left-desktop.png") no-repeat left -2px, url("../img/reviews-background-right-desktop.png") no-repeat right -2px;
   }
 }
 
@@ -61,6 +66,10 @@
     padding: 0 183px 0 162px;
     text-align: left;
   }
+
+  @media @desktop-widths {
+    padding: 0 294px;
+  }
 }
 
 .reviews__image {
@@ -74,6 +83,11 @@
     height: 108px;
     margin: 27px 23px 0 0;
   }
+
+  @media @desktop-widths {
+    width: 209px;
+    height: 209px;
+  }
 }
 
 .reviews__author {
@@ -83,11 +97,18 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
+  font-style: normal;
   color: @font-normal-color;
 
   @media @tablet-widths {
     margin-bottom: 11px;
     font-size: 14px;
+  }
+
+  @media @desktop-widths {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 
@@ -103,6 +124,12 @@
   @media @tablet-widths {
     font-size: 16px;
   }
+
+  @media @desktop-widths {
+    margin-bottom: 7px;
+    font-size: 27px;
+    line-height: 24px;
+  }
 }
 
 .reviews__text {
@@ -110,6 +137,11 @@
 
   @media @tablet-widths {
     line-height: 17px;
+  }
+
+  @media @desktop-widths {
+    padding-top: 25px;
+    margin-left: 30px;
   }
 }
 
@@ -123,6 +155,12 @@
 
   @media @tablet-widths {
     font-size: 14px;
+  }
+
+  @media @desktop-widths {
+    letter-spacing: 0.3px;
+    font-size: 18px;
+    line-height: 24px;
   }
 }
 

@@ -30,6 +30,11 @@
     font-size: 26px;
     line-height: 42px;
   }
+
+  @media @desktop-widths {
+    font-size: 35px;
+    margin-bottom: 47px;
+  }
 }
 
 .order__wrapper {
@@ -61,15 +66,42 @@
     &--decoration {
       margin-bottom: 0;
       padding-bottom: 26px;
-      background-image: url("../img/decoration-background.png");
+      background-image: url("../img/order-decoration-background-tablet.png");
       background-repeat: no-repeat;
       background-position: 4px 119px;
       background-size: 119px 157px;
     }
 
     &--result {
-      padding: 0 46px 44px 40px ;
+      padding: 0 46px 44px 40px;
       margin-bottom: 0;
+    }
+  }
+
+  @media @desktop-widths {
+    justify-content: space-between;
+    padding: 75px 43px 90px;
+    margin-bottom: 35px;
+
+    &--size {
+      flex-direction: row;
+      padding-bottom: 140px;
+    }
+
+    &--decoration {
+      margin-bottom: 0;
+      padding-top: 65px;
+      padding-bottom: 0;
+      background-image: url("../img/order-decoration-background-desktop.png");
+      background-repeat: no-repeat;
+      background-position: 17px 200px;
+      background-size: 252px 334px;
+    }
+
+    &--result {
+      margin-bottom: 0;
+      padding-top: 33px;
+      padding-bottom: 70px;
     }
   }
 }
@@ -122,6 +154,43 @@
       line-height: 36px;
     }
   }
+
+  @media @desktop-widths {
+    width: 172px;
+    padding-top: 42px;
+    padding-left: 38px;
+    font-size: 27px;
+    line-height: 30px;
+
+    &::before {
+      top: -23px;
+      left: 39px;
+      font-size: 58px;
+      line-height: 58px;
+    }
+
+    &--size {
+      width: auto;
+      padding-top: 47px;
+
+      &::before {
+        font-size: 64px;
+        line-height: 64px;
+      }
+    }
+
+    &--decoration {
+      padding-top: 56px;
+      letter-spacing: 0.5px;
+
+      &::before {
+        top: -20px;
+        left: 37px;
+        font-size: 64px;
+        line-height: 64px;
+      }
+    }
+  }
 }
 
 .order__list {
@@ -144,6 +213,24 @@
 
     &--decoration {
       width: 100%;
+    }
+  }
+
+  @media @desktop-widths {
+    &--filling {
+      width: 670px;
+      min-height: 405px;
+      padding-right: 212px;
+    }
+
+    &--size {
+      justify-content: space-between;
+      padding: 67px 145px 0 15px;
+      margin-bottom: 0;
+    }
+
+    &--decoration {
+      min-height: 440px;
     }
   }
 }
@@ -196,6 +283,20 @@
       line-height: 18px;
     }
   }
+
+  @media @desktop-widths {
+    font-size: 18px;
+    line-height: 26px;
+
+    &--filling {
+      margin-right: -127px;
+    }
+
+    &--decoration {
+      margin-right: 35px;
+      margin-bottom: 0;
+    }
+  }
 }
 
 .order__item {
@@ -233,6 +334,12 @@
     margin-left: 25px;
     padding-top: 22px;
     padding-right: 65px;
+  }
+
+  @media @desktop-widths {
+    margin-left: 42px;
+    padding-top: 65px;
+    padding-right: 180px;
   }
 }
 
@@ -277,6 +384,18 @@
       box-shadow: none;
     }
   }
+
+  @media @desktop-widths {
+    &--filling {
+      width: 344px;
+      height: 390px;
+    }
+
+    &--decoration {
+      width: 320px;
+      height: auto;
+    }
+  }
 }
 
 .order__name {
@@ -304,6 +423,16 @@
       line-height: 18px;
     }
   }
+
+  @media @desktop-widths {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 1px;
+
+    &--decoration {
+      margin-bottom: -1px;
+    }
+  }
 }
 
 .order__description {
@@ -322,6 +451,19 @@
       font-size: 12px;
       line-height: 20px;
       margin-bottom: 0;
+    }
+  }
+
+  @media @desktop-widths {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 13px;
+
+    &--size {
+      margin-top: 14px;
+      margin-bottom: 0;
+      font-size: 18px;
+      line-height: 30px;
     }
   }
 }
@@ -344,6 +486,14 @@
       margin-bottom: 20px;
     }
   }
+
+  @media @desktop-widths {
+    font-size: 22px;
+
+    &--decoration {
+     margin-bottom: 35px;
+    }
+  }
 }
 
 .order__btn {
@@ -356,6 +506,14 @@
     padding: 10px 45px;
     font-size: 10px;
     line-height: 22px;
+  }
+
+  @media @desktop-widths {
+    bottom: 148px;
+    right: 355px;
+    padding: 12px 61px;
+    font-size: 13px;
+    line-height: 26px;
   }
 }
 
@@ -375,4 +533,9 @@
 
 .order__form {
   width: 100%;
+
+  @media @desktop-widths {
+    padding-left: 29px;
+    padding-right: 47px;
+  }
 }

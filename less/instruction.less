@@ -2,10 +2,17 @@
   .container();
   padding-top: 29px;
   padding-bottom: 149px;
-  background: @bg-instruction url("../img/instruction-background.png") center 315px no-repeat;
+  background: @bg-instruction url("../img/instruction-background-mobile.png") center 315px no-repeat;
   background-size: 320px auto;
   text-align: left;
   color: @font-instruction-color;
+
+  @media @tablet-widths {
+    padding-top: 43px;
+    padding-bottom: 68px;
+    background: @bg-instruction url("../img/instruction-background-tablet.jpg") left -9px no-repeat;
+    background-size: 768px auto;
+  }
 }
 
 .instruction__title {
@@ -13,6 +20,12 @@
   margin-bottom: 30px;
   color: @font-instruction-color;
   text-align: center;
+
+  @media @tablet-widths {
+    margin-left: 308px;
+    margin-bottom: 28px;
+    text-align: left;
+  }
 }
 
 .instruction__list {
@@ -20,6 +33,11 @@
   list-style: none;
   counter-reset: myCounter;
   padding-left: 49px;
+
+  @media @tablet-widths {
+    margin-left: 290px;
+    padding-left: 61px;
+  }
 }
 
 .instruction__item {
@@ -42,6 +60,25 @@
     font-size: 35px;
     line-height: 35px;
     color: @font-instruction-color;
+  }
+
+  @media @tablet-widths {
+    margin-bottom: 25px;
+  }
+
+  &::before {
+    top: -7px;
+    left: -42px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.instruction__item br {
+  display: none;
+
+  @media @tablet-widths {
+    display: block;
   }
 }
 

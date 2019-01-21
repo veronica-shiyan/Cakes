@@ -3,12 +3,40 @@
   padding-top: 34px;
   padding-bottom: 50px;
   text-align: left;
+
+  @media @tablet-widths {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 676px;
+    padding: 38px 46px 85px;
+    background: url("../img/contact-background-tablet.jpg") right 188px no-repeat;
+    background-size: 458px auto;
+  }
+}
+
+.contacts__wrapper {
+  @media @tablet-widths {
+
+    &--left {
+      width: 51.5%;
+    }
+
+    &--right {
+      width: 39%;
+      padding-top: 84px;
+    }
+  }
 }
 
 .contacts__title {
   .titles();
   margin-bottom: 7px;
   text-align: center;
+
+  @media @tablet-widths {
+    margin-bottom: 4px;
+    text-align: left;
+  }
 }
 
 .contacts__slogan {
@@ -18,6 +46,10 @@
   font-size: 22px;
   line-height: 25px;
   color: @font-slogan-color;
+
+  @media @tablet-widths {
+    margin-bottom: 16px;
+  }
 }
 
 .contacts__tip {
@@ -28,11 +60,19 @@
   font-weight: 400;
   line-height: 17px;
   color: @font-normal-inner-color;
+
+  @media @tablet-widths {
+    margin-bottom: 12px;
+  }
 }
 
 .contacts__form {
   margin-bottom: 26px;
   text-align: center;
+
+  @media @tablet-widths {
+    text-align: left;
+  }
 }
 
 .contacts__input {
@@ -53,6 +93,21 @@
     padding-bottom: 22px;
     margin-bottom: 13px;
   }
+
+  @media @tablet-widths {
+    &--question {
+      margin-bottom: 21px;
+    }
+  }
+}
+
+.contacts__btn {
+  @media @tablet-widths {
+    text-transform: none;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 10px 48px;
+  }
 }
 
 .contacts__info {
@@ -66,6 +121,12 @@
 
   &--social {
     margin-bottom: 10px;
+  }
+
+  @media @tablet-widths {
+    &--social {
+      margin-bottom: 20px;
+    }
   }
 }
 

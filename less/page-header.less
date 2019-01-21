@@ -5,7 +5,12 @@
 
   @media @tablet-widths {
     width: 768px;
-    margin-bottom: 104px;
+    margin-bottom: 144px;
+  }
+
+  @media @desktop-widths {
+    width: 1366px;
+    margin-bottom: 0;
   }
 }
 
@@ -22,6 +27,13 @@
     background: url("../img/page-header-background-tablet.png") right 73px no-repeat;
     background-size: 496px auto;
   }
+
+  @media @desktop-widths {
+    width: 1220px;
+    padding: 0 73px 240px;
+    background: url("../img/page-header-background-desktop.png") right 9px no-repeat;
+    background-size: 1008px auto;
+  }
 }
 
 .page-header__title {
@@ -35,10 +47,20 @@
   word-spacing: 2px;
 
   @media @tablet-widths {
+    width: 270px;
     margin: 162px 0 5px;
     font-size: 60px;
     line-height: 55px;
+    text-align: left;
     letter-spacing: 4px;
+  }
+
+  @media @desktop-widths {
+    width: 353px;
+    margin: 138px 0 9px;
+    font-size: 78px;
+    line-height: 70px;
+    letter-spacing: 5px;
   }
 }
 
@@ -55,6 +77,12 @@
     font-size: 36px;
     line-height: 78px;
   }
+
+  @media @desktop-widths {
+    margin-bottom: 41px;
+    font-size: 43px;
+    letter-spacing: -1px;
+  }
 }
 
 .page-header__features {
@@ -68,6 +96,7 @@
 
   @media @tablet-widths {
     width: 465px;
+    margin-bottom: 0;
     flex-direction: row;
     order: 1;
   }
@@ -126,5 +155,9 @@
 .page-header__btn {
   @media @tablet-widths {
     margin-bottom: 146px;
+  }
+
+  @media @desktop-widths {
+    margin-bottom: 127px;
   }
 }

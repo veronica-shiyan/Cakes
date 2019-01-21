@@ -2,19 +2,39 @@
   .container();
   padding-top: 33px;
   background-color: @bg-page-footer;
+
+  @media @tablet-widths {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 21px;
+  }
 }
 
 .page-footer__nav {
-  display: flex;
-  flex-direction: column;
   margin-bottom: 4px;
+
+  @media @tablet-widths {
+    width: 100%;
+    margin-bottom: 25px;
+    margin-right: 13px;
+  }
 }
 
 .page-footer__list {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   list-style: none;
   font-size: 0;
+
+  @media @tablet-widths {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+  }
 }
 
 .page-footer__item {
@@ -28,6 +48,14 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  @media @tablet-widths {
+    margin-bottom: 0;
+
+    &--main {
+      margin-right:  16px;
+    }
+  }
 }
 
 .page-footer__item a {
@@ -36,6 +64,10 @@
   line-height: 22px;
   color: @font-page-footer-color;
   text-decoration: none;
+
+  @media @tablet-widths {
+    font-size: 12px;
+  }
 }
 
 .page-footer__item--main a {
@@ -43,6 +75,11 @@
   font-size: 28px;
   line-height: 42px;
   letter-spacing: 1px;
+
+  @media @tablet-widths {
+    font-size: 18px;
+    line-height: 44px;
+  }
 }
 
 .page-footer__contact {
@@ -52,13 +89,15 @@
   line-height: 22px;
   color: @font-page-footer-color;
   text-align: left;
+
+  @media @tablet-widths {
+    display: none;
+  }
 }
 
 .page-footer__copyright {
-  display: block;
-  width: 100%;
+  position: relative;
   padding: 4px 0 1px;
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
   font-family: @font-roboto;
   font-size: 12px;
   line-height: 25px;
@@ -68,4 +107,24 @@
   text-align: left;
   word-spacing: 1px;
   letter-spacing: 1px;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  @media @tablet-widths {
+    margin-left: 268px;
+    padding: 12px 0;
+
+    &::before {
+      width: 638px;
+      left: -226px;
+    }
+  }
 }
