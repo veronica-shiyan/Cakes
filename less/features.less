@@ -8,6 +8,11 @@
     padding: 0;
     background: url("../img/features-background-top-tablet.png") no-repeat left 10px;
   }
+
+  @media @desktop-widths {
+    width: 1366px;
+    background: url("../img/features-background-top-desktop.png") no-repeat left -8px;
+  }
 }
 
 .features__title {
@@ -31,6 +36,12 @@
     font-size: 26px;
     line-height: 30px;
   }
+
+  @media @desktop-widths {
+    font-size: 35px;
+    line-height: 65px;
+    font-weight: 400;
+  }
 }
 
 .features__list {
@@ -44,6 +55,10 @@
     margin: 45px 20px 0 362px;
     padding: 0;
     background-color: @bg-main;
+  }
+
+  @media @desktop-widths {
+    margin: 96px 215px 0 613px;
   }
 }
 
@@ -107,6 +122,22 @@
       background-image: url("../img/features-icon-cake-tablet.png");
     }
   }
+
+  @media @desktop-widths {
+    margin-bottom: 33px;
+    padding-left: 87px;
+
+    &::before {
+      width: 61px;
+      height: 61px;
+      top: 15px;
+    }
+
+    &--fresh::before {
+      width: 63px;
+      height: 38px;
+    }
+  }
 }
 
 .features__name {
@@ -122,6 +153,12 @@
     font-size: 15px;
     line-height: 15px;
   }
+
+  @media @desktop-widths {
+    margin-bottom: 3px;
+    font-size: 20px;
+    line-height: 27px;
+  }
 }
 
 .features__description {
@@ -136,6 +173,11 @@
   @media @tablet-widths {
     margin-bottom: 0;
     line-height: 16px;
+  }
+
+  @media @desktop-widths {
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 
@@ -157,6 +199,14 @@
       background-size: 418px auto;
     }
   }
+
+  @media @desktop-widths {
+    &--left {
+      padding: 395px 840px 254px 73px;
+      background: url("../img/features-background-bottom-desktop.png") right 70px no-repeat;
+      background-size: 768px auto;
+    }
+  }
 }
 
 .features__text {
@@ -166,8 +216,17 @@
   font-weight: 400;
   line-height: 17px;
   color: @font-normal-inner-color;
+
+  @media @desktop-widths {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .features__wrapper--left .features__slogan {
   margin-bottom: 0;
+
+  @media @desktop-widths {
+    line-height: 51px;
+  }
 }

@@ -12,6 +12,13 @@
     background: url("../img/contact-background-tablet.jpg") right 188px no-repeat;
     background-size: 458px auto;
   }
+
+  @media @desktop-widths {
+    width: 1220px;
+    padding: 62px 73px 273px;
+    background: url("../img/contact-background-desktop.jpg") right 210px no-repeat;
+    background-size: 886px auto;
+  }
 }
 
 .contacts__wrapper {
@@ -26,6 +33,16 @@
       padding-top: 84px;
     }
   }
+
+  @media @desktop-widths {
+    box-sizing: border-box;
+    width: 50%;
+
+    &--right {
+      padding-left: 20px;
+      padding-top: 142px;
+    }
+  }
 }
 
 .contacts__title {
@@ -36,6 +53,10 @@
   @media @tablet-widths {
     margin-bottom: 4px;
     text-align: left;
+  }
+
+  @media @desktop-widths {
+    margin-bottom: 11px;
   }
 }
 
@@ -50,6 +71,12 @@
   @media @tablet-widths {
     margin-bottom: 16px;
   }
+
+  @media @desktop-widths {
+    margin-bottom: 5px;
+    font-size: 35px;
+    line-height: 60px;
+  }
 }
 
 .contacts__tip {
@@ -63,6 +90,12 @@
 
   @media @tablet-widths {
     margin-bottom: 12px;
+  }
+
+  @media @desktop-widths {
+    margin-bottom: 44px;
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 
@@ -99,6 +132,21 @@
       margin-bottom: 21px;
     }
   }
+
+  @media @desktop-widths {
+    width: 90%;
+    margin-bottom: 36px;
+    padding: 0;
+    border-radius: 0;
+    border-bottom: 1px solid @font-normal-color;
+    background-color: @bg-main;
+    line-height: 24px;
+
+    &--question {
+      height: 20px;
+      margin-bottom: 78px;
+    }
+  }
 }
 
 .contacts__btn {
@@ -107,6 +155,12 @@
     font-size: 14px;
     line-height: 22px;
     padding: 10px 48px;
+  }
+
+  @media @desktop-widths {
+    font-size: 19px;
+    line-height: 27px;
+    padding: 10px 45px;
   }
 }
 
@@ -127,6 +181,12 @@
     &--social {
       margin-bottom: 20px;
     }
+  }
+
+  @media @desktop-widths {
+    margin-bottom: 24px;
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 

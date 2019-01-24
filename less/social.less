@@ -30,6 +30,17 @@
       margin-right: 216px;
     }
   }
+
+  @media @desktop-widths {
+    &--about-us {
+      padding-bottom: 80px;
+    }
+
+    &--footer {
+      order: 0;
+      margin-right: 0;
+    }
+  }
 }
 
 .social__item {
@@ -65,6 +76,12 @@
 
     &--about-us:last-child {
       margin: 0;
+    }
+  }
+
+  @media @desktop-widths {
+    &--about-us {
+      margin-right: 17px;
     }
   }
 }
@@ -136,5 +153,9 @@
     right: 0;
     width: 23px;
     height: 23px;
+  }
+
+  @media @desktop-widths {
+    background-color: transparent;
   }
 }

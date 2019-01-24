@@ -10,6 +10,12 @@
     padding: 3px 46px 0;
     text-align: right;
   }
+
+  @media @desktop-widths {
+    width: 1220px;
+    margin-bottom: 122px;
+    padding: 9px 73px 0;
+  }
 }
 
 .about-us__title {
@@ -20,6 +26,10 @@
   @media @tablet-widths {
     margin-bottom: 3px;
     text-align: left;
+  }
+
+  @media @desktop-widths {
+    margin-bottom: 11px;
   }
 }
 
@@ -32,6 +42,10 @@
     top: 0;
     right: 46px;
   }
+
+  @media @desktop-widths {
+    right: 145px;
+  }
 }
 
 .about-us__image {
@@ -42,12 +56,22 @@
     width: 313px;
     height: 311px;
   }
+
+  @media @desktop-widths {
+    width: 509px;
+    height: 510px;
+  }
 }
 
 .about-us__wrapper {
   @media @tablet-widths {
     padding-right: 345px;
     text-align: left;
+  }
+
+  @media @desktop-widths {
+    margin-bottom: 3px;
+    padding-right: 635px;
   }
 }
 
@@ -63,6 +87,14 @@
     margin-bottom: 9px;
     font-size: 26px;
     line-height: 28px;
+  }
+
+  @media @desktop-widths {
+    margin-left: -3px;
+    margin-bottom: 1px;
+    font-size: 35px;
+    line-height: 43px;
+    font-weight: 400;
   }
 }
 
@@ -82,6 +114,13 @@
     line-height: 15px;
     letter-spacing: 0.1px;
   }
+
+  @media @desktop-widths {
+    margin-bottom: 4px;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0;
+  }
 }
 
 .about-us__text {
@@ -92,6 +131,12 @@
   font-weight: 400;
   line-height: 17px;
   color: @font-normal-color;
+
+  @media @desktop-widths {
+    margin-bottom: 17px;
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 .about-us__cite {
@@ -115,6 +160,7 @@
     font-size: 60px;
     font-weight: 800;
     line-height: 88px;
+    font-style: normal;
     color: #fffefe;
   }
 
@@ -147,6 +193,25 @@
       bottom: 0;
       left: 44%;
       background: url("../img/about-us-signature-tablet.png") no-repeat;
+    }
+  }
+
+  @media @desktop-widths {
+    padding: 180px 270px 117px 265px;
+    font-size: 25px;
+    line-height: 38px;
+
+    &::before {
+      top: 81px;
+      left: 47%;
+      font-size: 140px;
+      line-height: 140px;
+    }
+
+    &::after {
+      width: 149px;
+      height: 73px;
+      background: url("../img/about-us-signature-desktop.png") no-repeat;
     }
   }
 }

@@ -64,6 +64,10 @@
   }
 }
 
+.product__item:hover img {
+   opacity: 0.6;
+}
+
 .product__wrapper {
   display: block;
   position: relative;
@@ -71,6 +75,7 @@
 
 .product__name {
   position: absolute;
+  z-index: 2;
   top: 8px;
   left: 13px;
   margin: 0;
@@ -95,6 +100,7 @@
 
 .product__count {
   position: absolute;
+  z-index: 2;
   top: 28px;
   left: 13px;
   margin: 0;

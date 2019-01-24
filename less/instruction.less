@@ -13,6 +13,13 @@
     background: @bg-instruction url("../img/instruction-background-tablet.jpg") left -9px no-repeat;
     background-size: 768px auto;
   }
+
+  @media @desktop-widths {
+    padding-top: 108px;
+    padding-bottom: 151px;
+    background: @bg-instruction url("../img/instruction-background-desktop.jpg") left -43px no-repeat;
+    background-size: 1366px auto;
+  }
 }
 
 .instruction__title {
@@ -26,6 +33,10 @@
     margin-bottom: 28px;
     text-align: left;
   }
+
+  @media @desktop-widths {
+    margin-left: 758px;
+  }
 }
 
 .instruction__list {
@@ -37,6 +48,10 @@
   @media @tablet-widths {
     margin-left: 290px;
     padding-left: 61px;
+  }
+
+  @media @desktop-widths {
+    margin-left: 734px;
   }
 }
 
@@ -64,13 +79,24 @@
 
   @media @tablet-widths {
     margin-bottom: 25px;
+
+    &::before {
+      top: -7px;
+      left: -42px;
+      font-size: 36px;
+      line-height: 36px;
+    }
   }
 
-  &::before {
-    top: -7px;
-    left: -42px;
-    font-size: 36px;
-    line-height: 36px;
+  @media @desktop-widths {
+    margin-bottom: 31px;
+
+    &::before {
+      top: -17px;
+      left: -42px;
+      font-size: 64px;
+      line-height: 64px;
+    }
   }
 }
 
@@ -80,6 +106,10 @@
   @media @tablet-widths {
     display: block;
   }
+
+  @media @desktop-widths {
+    display: none;
+  }
 }
 
 .instruction__name {
@@ -88,6 +118,12 @@
   font-size: 15px;
   font-weight: 800;
   line-height: 22px;
+
+  @media @desktop-widths {
+    margin-bottom: 5px;
+    font-size: 21px;
+    line-height: 27px;
+  }
 }
 
 .instruction__description {
@@ -96,4 +132,9 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
+
+  @media @desktop-widths {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }

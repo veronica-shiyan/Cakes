@@ -51,6 +51,14 @@
     background-color: @bg-main-nav-active;
   }
 
+  &:hover {
+    background-color: darken(@bg-main-nav-active, 20%);
+  }
+
+  &--active:hover {
+   background-color: @bg-main-nav-active;
+  }
+
   @media @desktop-widths {
     background-color: inherit;
     border-bottom: none;
