@@ -58,6 +58,7 @@
     flex-direction: row;
     padding: 40px 46px 49px;
     margin-bottom: 23px;
+    box-shadow: 5px 5px 20px 0 rgba(163, 6, 60, 0.1);
 
     &--size {
       flex-direction: column;
@@ -66,7 +67,7 @@
     &--decoration {
       margin-bottom: 0;
       padding-bottom: 26px;
-      background-image: url("../img/order-decoration-background-tablet.png");
+      background-image: url("../img/order/decoration/order-decoration-background-tablet.png");
       background-repeat: no-repeat;
       background-position: 4px 119px;
       background-size: 119px 157px;
@@ -92,7 +93,7 @@
       margin-bottom: 0;
       padding-top: 65px;
       padding-bottom: 0;
-      background-image: url("../img/order-decoration-background-desktop.png");
+      background-image: url("../img/order/decoration/order-decoration-background-desktop.png");
       background-repeat: no-repeat;
       background-position: 17px 200px;
       background-size: 252px 334px;
@@ -321,7 +322,11 @@
     }
 
     &--decoration {
-      box-shadow: 1px 1px 1px 1px rgba(163, 6, 60, 0.1);
+      box-shadow: 1px 1px 9px 2px rgba(163, 6, 60, 0.1);
+
+      &:hover {
+        box-shadow: 1px 1px 9px 2px rgba(163, 6, 60, 0.3);
+      }
     }
   }
 }
@@ -360,7 +365,7 @@
     height: 198px;
     margin-top: 8px;
     margin-bottom: 25px;
-    box-shadow: 1px 1px 1px 1px rgba(163, 6, 60, 0.1);
+    box-shadow: 1px 1px 9px 2px rgba(163, 6, 60, 0.1);
   }
 
   @media @tablet-widths {
@@ -375,6 +380,12 @@
       height: auto;
       margin-top: 0;
       margin-bottom: 6px;
+
+      &:hover {
+        border-radius: 50%;
+        box-shadow: 0 0 0 10px rgba(255, 255, 255, 1),
+        1px 3px 9px 14px rgba(163, 6, 60, 0.1);
+      }
     }
 
     &--decoration {
@@ -497,6 +508,7 @@
 }
 
 .order__btn {
+  z-index: 3;
   align-self: center;
 
   @media @tablet-widths {

@@ -21,25 +21,26 @@
     height: 40px;
     cursor: pointer;
     font-size: 0;
-    background-color: @bg-main-nav-active;
+    background-color: rgba(255, 255, 255, 0.5);
     background-repeat: no-repeat;
     background-position: center center;
     border: none;
     border-radius: 50%;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16);
 
     &--prev {
       left: -84px;
-      background-image: url("../img/icon-btn-prev.svg");
+      background-image: url("../img/slider/icon-btn-prev.svg");
     }
 
     &--next {
       right: 5px;
-      background-image: url("../img/icon-btn-next.svg");
+      background-image: url("../img/slider/icon-btn-next.svg");
     }
 
     &:hover {
-      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.8);
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.32);
+      background-color: rgba(255, 255, 255, 1);
     }
   }
 
@@ -50,7 +51,7 @@
 
     &--prev {
       left: -114px;
-     }
+    }
 
     &--next {
       right: 69px;
@@ -59,6 +60,7 @@
 }
 
 .order__wrapper--decoration .slider__btn {
+
   @media @tablet-widths {
     &--prev {
       left: -11px;
@@ -69,7 +71,7 @@
     }
   }
 
-  @media @tablet-widths {
+  @media @desktop-widths {
     top: 198px;
 
     &--prev {

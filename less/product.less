@@ -64,8 +64,17 @@
   }
 }
 
+.product__item img {
+  box-shadow: 5px 5px 20px 0 rgba(163, 6, 60, 0.05);
+}
+
 .product__item:hover img {
    opacity: 0.6;
+
+  @media @tablet-widths {
+    opacity: 1;
+    box-shadow: 7px 7px 20px 0 rgba(163, 6, 60, 0.12);
+  }
 }
 
 .product__wrapper {
