@@ -49,6 +49,7 @@
 }
 
 .social__item {
+  position: relative;
   margin-bottom: 15px;
 
   &:last-child {
@@ -83,7 +84,7 @@
     }
 
     &--contacts {
-     margin-right: 29px;
+      margin-right: 29px;
     }
   }
 
@@ -94,76 +95,71 @@
   }
 }
 
+.social__icon {
+  position: absolute;
+  fill: @mark-color;
+  top: 7px;
+  left: 7px;
+  width: 22px;
+  height: 22px;
+
+  &--contacts {
+    top: 16px;
+    left: 16px;
+    width: 32px;
+    height: 32px;
+  }
+
+  &--footer {
+    fill: @font-page-footer-color;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    width: 23px;
+    height: 23px;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  @media @desktop-widths {
+    &--footer {
+      fill: @font-normal-color;
+
+      &:hover {
+        fill: @font-normal-inner-color;
+      }
+    }
+  }
+}
+
 .social__name {
-  position: relative;
   display: block;
   width: 36px;
   height: 36px;
   border-radius: 50%;
   background-color: @bg-main-nav-active;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 18px;
-    height: 18px;
-    background-repeat: no-repeat;
-  }
-
   &:hover {
     box-shadow: 2px 5px 10px rgba(255, 0, 67, 0.2);
   }
-}
 
-.social__name--instagram {
-  &::before {
-    top: 9px;
-    right: 9px;
-    background-image: url("../img/social/icon-instagram.svg");
+  &--contacts {
+    width: 64px;
+    height: 64px;
   }
-}
 
-.social__name--vkontakte {
-  &::before {
-    top: 8px;
-    background-image: url("../img/social/icon-vk.svg");
-  }
-}
-
-.social__name--twitter {
-  &::before {
-    background-image: url("../img/social/icon-twitter.svg");
-  }
-}
-
-.social__name--contacts {
-  width: 64px;
-  height: 64px;
-
-  &::before {
-    top: 16px;
-    right: 16px;
-    width: 32px;
-    height: 32px;
-  }
-}
-
-.social__name--footer {
-  width: 23px;
-  height: 23px;
-  border-radius: 0;
-  background-color: @bg-page-footer;
-
-  &::before {
-    top: 0;
-    right: 0;
+  &--footer {
     width: 23px;
     height: 23px;
+    border-radius: 0;
+    background-color: @bg-page-footer;
   }
 
   @media @desktop-widths {
-    background-color: transparent;
+    &--footer {
+      background-color: transparent;
+    }
   }
 }
